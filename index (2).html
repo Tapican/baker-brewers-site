@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Header Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Nunito+Sans:wght@400;600;700&family=Canva+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="circlelogo"><img src='transparentlogo.png' height="100%"></div>
+
+    <div class="burger-toggle" onclick="toggleMenu()">&#9776;</div>
+
+    <nav>
+      <ul id="nav-list">
+        <li><a href="#home_section">Home</a></li>
+        <li><a href="#menu_section">Menu</a></li>
+        <li><a href="#delivery_section">Delivery</a></li>
+        <li><a href="#location_section">Find Our Store!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="split-section">
+    <div class="left"></div>
+
+    <div class="right">
+
+      <div class="text-block">
+        <h2 style="font-family: 'Nunito Sans', sans-serif;">CHOCOLATE CHUNK COOKIE</h2>
+      </div>
+      
+      <div class="text-block">
+        <p><em style="font-family: 'Canva Sans', sans-serif;">Soft, chewy, and extra-chunky.</em></p>
+      </div>
+
+      <div class="text-block">
+        <p style="font-family: 'Nunito Sans', sans-serif;">Our choco-chunk cookie is baked soft and chewy, filled with generous chunks of rich chocolate in every bite. It pairs perfectly with our signature blend coffee. Whether you want a comforting combo to start off your day, or just a simple snack in the afternoon, this cookie’s gotcha!</p>
+      </div>
+
+      <div class="text-block">
+        <a href="b&b.com/order"><button class="order-now">Order Now!</button></a>
+      </div>
+
+    </div>
+  </section>  
+
+  <section class="menu-section">
+    <h2 class="menu-title">BEVERAGES</h2>
+
+    <div class="menu-grid">
+
+      <div class="menu-item">
+        <img src="placeholder.jpg" alt="Americano">
+        <p class="item-name">AMERICANO</p>
+        <p class="item-price">₱ 100.00</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="placeholder.jpg" alt="Latte">
+        <p class="item-name">LATTE</p>
+        <p class="item-price">₱ 130.00</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="placeholder.jpg" alt="Mocha Latte">
+        <p class="item-name">MOCHA LATTE</p>
+        <p class="item-price">₱ 110.00</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="storefront-section">
+  <div class="left-info">
+    <div class="info-block">
+      <h3>We’re open on these times</h3>
+      <p>Monday to Sunday | 10:00AM - 6:00PM</p>
+    </div>
+
+    <div class="info-block">
+      <h3>Where to find us?</h3>
+      <p>
+        <a href="https://maps.app.goo.gl/qx6DHsVQQNM7JHiFA" target="_blank">
+          13 Ofelia St., Project 8, Brgy. Bahay Toro, Q.C.
+        </a><br>
+        <small>(Embed with Google Map link)</small>
+      </p>
+    </div>
+
+    <div class="info-block">
+      <h3>Follow us on our Socials :)</h3>
+      <p>
+        <a href="https://www.facebook.com/bakersandbrewersco.ph">
+          https://www.facebook.com/bakersandbrewersco.ph
+        </a>
+      </p>
+    </div>
+
+    <div class="info-block">
+      <h3>Contact Us Here!</h3>
+      <p class="contact-number">0960 454 5028</p>
+    </div>
+  </div>
+
+  <div class="right-image">
+    <img src="storefront.jpg" alt="Storefront">
+  </div>
+</section>
+
+  <script>
+    function toggleMenu() {
+      const navList = document.getElementById("nav-list");
+      navList.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
